@@ -18,13 +18,19 @@
         <a-assets>
             <img id="turbine" src="./assets/models/ct_turbine_ar.jpg">
         </a-assets>
-        <a-marker preset="hiro">
+        <!--<a-marker preset="hiro">
             <a-entity
                 gltf-model="./assets/models/turbine_generator/scene.gltf"
                 scale=".01 .01 .01"
                 position="0 -7 -5"
                 text="value: Alexender Statue\n Alexandria"
             ></a-entity>
+        </a-marker>-->
+        <a-marker type="pattern" preset="custom" url="./assets/WAD1-015.png">
+          <a-entity
+              position="0 -7 -5"
+              text="value: WAD1-015">
+          </a-entity>
         </a-marker>
         <a-entity camera></a-entity>
     </a-scene>
