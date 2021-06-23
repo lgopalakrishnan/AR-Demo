@@ -15,9 +15,9 @@
 
 <body style="margin : 0px; overflow: hidden;">
     <a-scene embedded arjs>
-        <a-assets>
+        <!--<a-assets>
             <img id="turbine" src="./assets/models/ct_turbine_ar.jpg">
-        </a-assets>
+        </a-assets>-->
         <!--<a-marker preset="hiro">
             <a-entity
                 gltf-model="./assets/models/turbine_generator/scene.gltf"
@@ -28,9 +28,8 @@
         </a-marker>-->
         <!--<a-marker type="pattern" preset="custom" url="./assets/WAD1-015.png" value="WAD1-015">-->
         <a-marker preset="hiro">
-          <a-entity scale="3 3 3" position="0 0 -5" text="text: WAD1-015" color: #333>
-              <a-text value= "WAD1-015" color="Red" scale="3 3 3" position="0 0 -5">
-          </a-entity>
+          <a-entity  geometry="primitive: plane; width: 4; height: auto"  material="color: blue"
+              text="value: WAD1-0015"></a-entity>
         </a-marker>
         <a-entity camera></a-entity>
     </a-scene>
